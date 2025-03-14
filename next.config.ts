@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ["ddragon.leagueoflegends.com"], // 사용하려는 외부 이미지 도메인 추가
+  },
 };
 
 export default nextConfig;
