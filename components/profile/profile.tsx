@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Profile = {
   image: string;
@@ -7,10 +8,10 @@ type Profile = {
 
 const Profile = ({ image, name }: Profile) => {
   return (
-    <div>
+    <Link href={`/detail/${name}`}>
       <Image width={96} height={96} src={image} alt={""} />
       <span>{name}</span>
-    </div>
+    </Link>
   );
 };
 
